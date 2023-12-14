@@ -1,0 +1,15 @@
+{
+  "name": "React_WebSocket_To-do-list",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:aleks-sobiecka/React_WebSocket_To-do-list.git",
+  "author": "Aleksandra Sobiecka <aleks.sobiecka@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "4.17.1",
+    "socket.io": "4.7.2"
+  },
+  "scripts": {
+    "start": "nodemon server.js"
+  }
+}
