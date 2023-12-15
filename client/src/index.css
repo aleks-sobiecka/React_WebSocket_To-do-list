@@ -17,6 +17,10 @@ p {
   font-size: 0.8rem;
 }
 
+.hide {
+  display: none;
+}
+
 .btn {
   background: #0064e7;
   border: none;
@@ -37,6 +41,10 @@ p {
 
 .btn--red {
   background: #e74c3c;
+}
+
+.btn--green {
+  background: green;
 }
 
 .text-input {

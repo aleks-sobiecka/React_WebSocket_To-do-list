@@ -46,6 +46,22 @@ io.on('connection', (socket) => {
       }
     }
   });
+
+  //listener on editing task
+  socket.on('editTask', taskData => {
+    console.log('taskData: ', taskData)
+    //change task name
+    for (let task of tasks){
+      if (task.id === taskData.id){
+        task.name = taskData.name
+        //emitt edit task to other sockets
+        socket.broadcast.emit('editTask', taskData);
+      }
+    }
+
+    /* const task = tasks.find(task => (task.id === taskData.id))
+    if (task) {task.name = taskData.name}; */
+  });
 });
 
 
